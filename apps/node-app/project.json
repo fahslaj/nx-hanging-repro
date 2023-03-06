@@ -1,0 +1,15 @@
+{
+  "name": "node-app",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "tags": [],
+  "targets": {
+    "run": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": ["tsc", "node cli.js"],
+        "cwd": "apps/node-app",
+        "parallel": false
+      }
+    }
+  }
+}
